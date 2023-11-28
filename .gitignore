@@ -1,5 +1,5 @@
-eye_dataset/**
-yawn_dataset/**
+eye_dataset/
+yawn_dataset/
 
 *.jpg
 *.jpeg
