@@ -2,11 +2,19 @@ from flask import Flask, render_template, Response
 import cv2 as cv
 import numpy as np
 import dlib
-# import time
 import tensorflow as tf
 from pygame import mixer
 
 app = Flask(__name__)
+
+mixer.init()
+mixer.music.load('./utils/alarm.wav')
+
+detector = dlib.get_frontal_face_detector()
+predictor = dlib.shape_predictor("utils/shape_predictor_68_face_landmarks.dat")
+
+model_eyes = tf.keras.models.load_model('sleep_detection/sleep_model_6.h5')
+model_mouth = tf.keras.models.load_model('yawn_detection/yawn_model_1.h5')
 
 
 def detect_drowsiness(image):
@@ -94,14 +102,6 @@ def detect_drowsiness(image):
     return scores
 
 
-mixer.init()
-mixer.music.load('./utils/alarm.wav')
-
-detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("utils/shape_predictor_68_face_landmarks.dat")
-
-model_eyes = tf.keras.models.load_model('sleep_detection/sleep_model_6.h5')
-model_mouth = tf.keras.models.load_model('yawn_detection/yawn_model_1.h5')
 
 
 
@@ -165,4 +165,4 @@ def predict():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
