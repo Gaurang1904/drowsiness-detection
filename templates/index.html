@@ -7,7 +7,7 @@
     <title>Drowsiness Detection</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: blueviolet;
@@ -28,15 +28,16 @@
         }
         img {
             width: 100%;
-            max-width: 600px; /* Adjust maximum image width */
+            /* max-width: 600px; Adjust maximum image width */
             height: auto;
             display: block;
             margin: 0 auto;
+            border-radius: 2cm;
         }
     </style>
 </head>
 <body>
-    <h1>Drowsiness Detection</h1>
+    <h1 style="font: italic;">Driver Drowsiness Detection System</h1>
     <div class="container">
         <div class="image-container">
             <img src="{{ url_for('predict') }}" alt="Video Stream">
