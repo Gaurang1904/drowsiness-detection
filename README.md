@@ -1,13 +1,12 @@
-# Minor-Project
 # Driver Drowsiness Detection System using Deep Learning and OpenCV
-Made this project as a part of course curriculum (minor project).
+Made this project as a part of course curriculum (drowsiness-detection).
 Datasets used were 1) MRL eye dataset & 2) Yawn dataset scrapped from kaggle
 
 ## installation and setup
 ### clone the repo to your local machine
 ``` bash
-git clone https://github.com/umar1207/minor-project.git
-cd minor-project
+git clone https://github.com/Gaurang1904/drowsiness-detection.git
+cd drowsiness-detection
 ```
 
 ### create a virtual environment (optional - recommended)
