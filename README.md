@@ -24,3 +24,13 @@ myenv\Scripts\activate
 ``` bash
 source myenv/bin/activate
 ```
+
+### install the dependencies
+``` bash
+pip install -r requirements.txt
+```
+
+### run
+``` bash
+python app.py
+```
