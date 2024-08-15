@@ -5,5 +5,7 @@ Datasets used were 1) MRL eye dataset & 2) Yawn dataset scrapped from kaggle
 
 ## installation and setup
 ``` python
-pip install -r requirements.txt
+# clone
+git clone https://github.com/umar1207/minor-project.git
+cd minor-project
 ```
