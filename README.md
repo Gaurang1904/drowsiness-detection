@@ -4,6 +4,6 @@ Made this project as a part of course curriculum (minor project).
 Datasets used were 1) MRL eye dataset & 2) Yawn dataset scrapped from kaggle
 
 ## installation and setup
-code ```
+``` python
 pip install -r requirements.txt
 ```
