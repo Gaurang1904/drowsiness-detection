@@ -129,8 +129,8 @@ def generate_frames():
         else:
             cv.putText(frame, f'Total: {score}', (10,100), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
         
-        cv.putText(frame, f'Eye: {eyeScore}', (10,200), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
-        cv.putText(frame, f'Mouth: {mouthScore}', (10,300), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
+        # cv.putText(frame, f'Eye: {eyeScore}', (10,200), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
+        # cv.putText(frame, f'Mouth: {mouthScore}', (10,300), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
         if(score > 0.4):
             flag+=1
 
